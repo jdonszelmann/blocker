@@ -1,0 +1,15 @@
+[package]
+name = "blocker"
+version = "0.1.0"
+authors = ["jonay2000 <jonabent@gmail.com>", "Victor Roest <victor@xirion.net>"]
+edition = "2018"
+description = "Block rust futures to create a synchronous wrapper around an asynchronous api"
+keywords = ["async"]
+license = "Apache-2.0"
+
+[features]
+# enable to yield the current when blocking
+thread_yield = []
+
+[dependencies]
+futures = { version = "0.3", default-features = false}
