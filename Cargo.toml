@@ -1,0 +1,12 @@
+[package]
+name = "blocker"
+version = "0.1.0"
+authors = ["jonay2000 <jonabent@gmail.com>"]
+edition = "2018"
+
+[features]
+# enable to yield the current when blocking
+thread_yield = []
+
+[dependencies]
+futures = { version = "0.3", default-features = false}
